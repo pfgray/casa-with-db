@@ -1,4 +1,4 @@
-FROM pfgray/casa
+FROM pfgray/casa:latest
 
 #Install couchdb:
 RUN apt-get update
