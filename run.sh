@@ -1,5 +1,6 @@
 
 #setup environment vars
+export NODE_ENV="production"
 export COUCH_HOST="http://127.0.0.1"
 export COUCH_PORT="5984"
 export COUCH_DB_NAME="casa"
@@ -15,4 +16,4 @@ until $(curl --output /dev/null --silent --head --fail http://localhost:5984); d
 done
 
 #run the app:
-node /app/server/app.js
+node /app/dist/server/app.js
