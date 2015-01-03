@@ -5,6 +5,9 @@ export COUCH_HOST="http://127.0.0.1"
 export COUCH_PORT="5984"
 export COUCH_DB_NAME="casa"
 
+#configure couchdb
+echo -e "\n[query_server_config]\nreduce_limit = false" >> /etc/couchdb/local.ini
+
 #run couchdb
 couchdb &
 
